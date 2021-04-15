@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    overflow: hidden;
+    padding: 0px 10px 10px 10px;
+}
+
+table {
+    width: 100%;
+}
+
+thead, tfoot{
+    background-color: royalblue;
+    color: white;
+    font-size: 1.4em;
+}
+
+tr{
+    user-select: none;
+}
+
+tbody > tr:hover {
+    background-color: rgb(65, 105, 225);
+    color: white;
+}
+
+td:not(:nth-child(3)){
+    text-align: center;
+    width: fit-content;
+}
+
+nav {
+    overflow: hidden;
+    background-color: royalblue;
+}
+
+nav > a {
+    text-decoration: none;
+    color:white;
+    font-size: 1.4em;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav :first-child {
+    background-color: black;
+}
+
+.float {
+    font-size: 1.2em;
+    position: fixed;
+    top: 45px;
+    right: 0;
+}
+
+.add {
+    text-decoration: none;
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+/**Modal**/
+
+.modal {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.modal-content {
+    background-color: white;
+    width: max-content;
+    margin: 40vh auto;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.modal-content > a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 70px;
+    border-radius: 4px;
+    border-radius: 4px;
+}
+
+#edit{
+    background-color: royalblue;
+    color: white;
+}
+
+#del{
+    background-color: red;
+    color: white;
+}
+
+#mod-edit .modal-content> input {
+    display: block;
+    margin-top: 5px;
+}
+
+input {
+    margin: 0;
+    padding: 0%;
+    width: 100%;
+}

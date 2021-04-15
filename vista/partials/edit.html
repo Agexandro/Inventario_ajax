@@ -1,0 +1,14 @@
+<div id="mod-edit" class="modal">
+    <div class="modal-content">
+        <input type="text" id="" placeholder="Lote">
+        <input type="number" min="0" id="" placeholder="0" >
+        <input type="date" id="" placeholder="Caducidad">
+        <button>Guarfar</button>
+        <button onclick="cancelar(this)">Salir</button>
+    </div>
+</div>
+<script>
+    function cancelar(){
+        document.getElementById("mod-edit").style.display = "none"
+    }
+</script>
